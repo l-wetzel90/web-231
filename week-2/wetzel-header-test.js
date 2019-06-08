@@ -3,6 +3,7 @@
 ; Title:  header-test.js
 ; Author: Loren Wetzel
 ; Date:   8 June 2019
+; Modified By:
 ; Description: Displays a formatted header
 ;===========================================
 */
