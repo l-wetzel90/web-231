@@ -15,7 +15,7 @@
 */
 exports.display = function (firstName, lastName, assignment) {
 	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
-	new Date().toLocaleDateString('en-US')
+	new Date().toLocaleDateString('en-US') + '\n'
 
 	return output
 }
