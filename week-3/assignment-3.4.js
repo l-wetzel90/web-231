@@ -1,3 +1,18 @@
+'use strict';
+/*
+============================================
+; Title:  Exercise 3.2
+; Author: Loren Wetzel
+; Date:   12 June 2019
+; Modified By:
+; Description: creating function to test for pattern matching
+;===========================================
+*/
+
+//header
+const header = require('../wetzel-header.js');
+console.log(header.display("Loren", "Wetzel", "Exercise 3.2"));
+
 /*
   // Below is what I am expecting to see when I run your program - remove this before submitting your work
   // 50% of you will not read this and lose 25% of the awardable points.
