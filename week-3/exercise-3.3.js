@@ -13,6 +13,9 @@
 const header = require('../wetzel-header.js');
 console.log(header.display("Loren", "Wetzel", "Exercise 3.3"));
 
+
+//start program
+
 /*
   Expected output:
 
@@ -23,8 +26,6 @@ console.log(header.display("Loren", "Wetzel", "Exercise 3.3"));
   // Expected output
   The enter key was pressed
 */
-
-//start program
 
 //variable
 let eventKeyCode = 13

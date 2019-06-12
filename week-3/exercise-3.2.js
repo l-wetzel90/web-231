@@ -41,7 +41,7 @@ function match(x, y) {
   }
 }
 
-//functions to output match()
+//functions to output match() results
 function logMismatch(x, y) {
   console.log(x + " and " + y + " do not match!");
 }
