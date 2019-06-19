@@ -46,9 +46,9 @@ function hexOfColor(arr, arr2) {
 
   for (let i = 0; i < arr.length; i++) {
 
-    arr3[i] = arr[i] + "'s hex code is " + arr2[i];
+    arr3.push(arr[i] + "'s hex code is " + arr2[i]);
 
-    console.log(arr3[i])
+    console.log(arr3[i]);
   }
 }
 
