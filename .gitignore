@@ -9,3 +9,4 @@ node_module
 
 # other files
 test.js
+*.docx
