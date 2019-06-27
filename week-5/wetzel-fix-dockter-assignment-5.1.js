@@ -3,7 +3,7 @@
 ; Title:  Assignment 5.1
 ; Author: Brittany Dockter
 ; Date:   23 June 2019
-; Modified by: Brittany Dockter
+; Modified by: Loren Wetzel
 ; Description: Creating a function using maps.
 ;===========================================
 */
