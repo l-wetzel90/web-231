@@ -28,6 +28,8 @@ console.log(header.display("Loren", "Wetzel", "Exercise 6.2"));
 
 //start program
 
+//try catch block
+//check if one random number is module of another random number
 try {
   var x = randomNumber100();
 

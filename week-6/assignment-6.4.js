@@ -4,9 +4,9 @@
 ; Author: Loren Wetzel
 ; Date:   2 July 2019
 ; Modified By:
-; Description: Using JavaScripts built-in
-;   forEach() function, iterate over the
-;   array and output the results.
+; Description: Create an object literal
+;   ticket with a nested object
+;   literal person and display the results
 ;===========================================
 */
 'use strict';
@@ -15,17 +15,27 @@
 const header = require('../wetzel-header.js');
 console.log(header.display("Loren", "Wetzel", "Assignment 6.4"));
 
-/*
-  // Below is what I am expecting to see when I run your program - remove this before submitting your work
-  // 50% of you will not read this and lose 25% of the awardable points.
+//start program
 
-  FirstName LastName
-  Assignment 6.4
-  Today's Date
+//object literal with nested object literal
+var ticket = {
+  id: 135,
+  name: "It won't work!!!!",
+  dateCreated: new Date().toLocaleDateString('en-US'),
+  priority: 1,
+  personId: 5,
 
-  Ticket 105 was created on <today' date> and assigned to employee Bob Jones (Programmer I).
-*/
+  person: {
+    id: 5,
+    firstName: "Loren",
+    lastName: "Wetzel",
+    jobTitle: "Programmer I"
+  }
+};
 
-
+//output
+console.log("Ticket " + ticket.id + " was created on " + ticket.dateCreated
+  + " and assigned to employee " + ticket.person.firstName + " "
+  + ticket.person.lastName + " (" + ticket.person.jobTitle + ").");
 
 //end program

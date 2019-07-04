@@ -27,14 +27,15 @@ console.log(header.display("Loren", "Wetzel", "Exercise 6.3"));
 
 // start program
 
+//create object literal
 var person = {
-
   id: 101,
   name: "Help Desk Support",
   requester: "Bob Jones"
 
 };
 
+//output
 console.log("id: " + person.id + ", name: " + person.name
   + ", requester: " + person.requester);
 

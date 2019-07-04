@@ -32,6 +32,7 @@ console.log(header.display("Loren", "Wetzel", "Discussion 6.1"));
 
 //start program
 
+//create object that has getters and setters
 var fam = {
   fName: "Loren",
   lName: "Wetzel",
@@ -45,12 +46,17 @@ var fam = {
     this.fullName = val;
   }
 }
+//output
 console.log("Hey everyone, I'm " + fam.name + ".\n")
 
+//array to use with object
 var kid = [["Romeo", "Wetzel", 17],
 ["Ashton", "Vodicka", 4], ["Aurora", "Tyson", 1]];
 
+//output
 console.log("I have 3 kids. Starting with my oldest they are")
+
+//iterate over array while using fam object to output
 var index = 0;
 kid.forEach(function (k) {
   fam.fName = k[index],
