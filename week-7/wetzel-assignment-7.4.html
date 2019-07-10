@@ -1,0 +1,74 @@
+<!--
+============================================
+; Title:  Exercise 7.4
+; Author: Loren Wetzel
+; Date:   10 July 2019
+; Modified By:
+; Description: Create an HTML table of five
+;   (5) computer components. Using inline JavaScript
+;   alert the computer components id when the
+;   "EDIT" href is selected and a confirmation
+;   when the "DELETE" href is selected.
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wetzel Assignment 7.4</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+
+</head>
+<!-- table -->
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Functions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Laptop</td>
+        <td>1,500.99</td>
+        <!-- inline javascript alerts for edit and delete-->
+        <td><a href="javascript:alert('1');">EDIT</a> | <a href="javascript:confirm('Are You Sure?');">DELETE</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Motherboard</td>
+        <td>35.70</td>
+        <td><a href="javascript:alert('2');">EDIT</a> | <a href="javascript:confirm('Are You Sure?');">DELETE</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Monitor</td>
+        <td>174.99</td>
+        <td><a href="javascript:alert('3');">EDIT</a> | <a href="javascript:confirm('Are You Sure?');">DELETE</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mouse</td>
+        <td>13.99</td>
+        <td><a href="javascript:alert('4');">EDIT</a> | <a href="javascript:confirm('Are You Sure?');">DELETE</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Keyboard</td>
+        <td>14.50</td>
+        <td><a href="javascript:alert('5');">EDIT</a> | <a href="javascript:confirm('Are You Sure?');">DELETE</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
