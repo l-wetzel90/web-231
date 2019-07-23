@@ -1,3 +1,12 @@
+<!--
+============================================
+; Title:  Exercise 8.2
+; Author: Loren Wetzel
+; Date:   22 July 2019
+; Modified By:
+; Description: modify dom with jquery
+;===========================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +48,7 @@
   <div id="fruits" class="center"></div>
 
   <script>
+    //array of objects
     var fruits = [
       {
         id: 1,
@@ -60,13 +70,14 @@
         id: 5,
         type: "grape"
       }];
-
+    //variable string of html elements for output
     var out = '<h2>Fruits</h2><ul>';
     for (var x = 0; x < fruits.length; x++) {
       out += '<li>' + fruits[x].type + '</li>';
     }
     out += '</ul>';
 
+    //output
     document.getElementById('fruits').innerHTML = out;
 
   </script>

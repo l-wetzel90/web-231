@@ -1,3 +1,12 @@
+<!--
+============================================
+; Title:  Assignment 8.3
+; Author: Loren Wetzel
+; Date:   22 July 2019
+; Modified By:
+; Description: modify dom with jquery
+;===========================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,11 +109,14 @@
   </div>
 
   <script type="text/javascript">
+    //onload event
     $(function () {
+      //hide paragraph when button is clicked
       $("#toggle").click(function () {
         $("#hideMe").toggle();
       });
 
+      //onclick for table
       $(".fruitID").click(function (event) {
         event.preventDefault();
         var fruitID = $(this).text();
