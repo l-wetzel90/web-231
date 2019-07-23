@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+  <style>
+    html {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 5px;
+    }
+
+    th {
+      background-color: purple;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: plum;
+    }
+
+    body::before {
+      margin-bottom: 20px;
+      content: '';
+      background-color: red;
+      display: inline-block;
+      height: 50px;
+      width: 100%;
+    }
+
+    .first,
+    .second {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="first">
+    <h2>Lorem Ipsum</h2>
+    <p id="hideMe">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est vel urna laoreet, non hendrerit elit
+      luctus. Donec porttitor sollicitudin urna sed suscipit. Curabitur et scelerisque mi. Vestibulum tempus arcu dui,
+      vitae lacinia nisl scelerisque eget. Phasellus non purus ante. Suspendisse potenti. In hac habitasse platea
+      dictumst. Proin ac elementum lacus. Nunc nec scelerisque ipsum, sed eleifend elit. Pellentesque laoreet est eget
+      est
+      sodales tempor.
+    </p>
+    <button id="toggle">Toggle</button>
+  </div>
+
+  <div class="second">
+    <table id="fruits">
+      <caption>Fruits</caption>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td><a href="#" class="fruitID">1</a></td>
+        <td>Blueberry</td>
+      </tr>
+      <tr>
+        <td><a href="#" class="fruitID">2</a></td>
+        <td>Strawberry</td>
+      </tr>
+      <tr>
+        <td><a href="#" class="fruitID">3</a></td>
+        <td>Apple</td>
+      </tr>
+      <tr>
+        <td><a href="#" class="fruitID">4</a></td>
+        <td>Grape</td>
+      </tr>
+      <tr>
+        <td><a href="#" class="fruitID">5</a></td>
+        <td>Pineapple</td>
+      </tr>
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#toggle").click(function () {
+        $("#hideMe").toggle();
+      });
+
+      $(".fruitID").click(function (event) {
+        event.preventDefault();
+        var fruitID = $(this).text();
+        var fruitType = $(this).closest("td").next().text();
+        alert("{Fruit ID: " + fruitID + ", Fruit Type: " + fruitType + "}")
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

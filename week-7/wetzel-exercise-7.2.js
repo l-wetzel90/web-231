@@ -50,6 +50,13 @@ var employees = [
   new Employee(5, "Alexander", "Bell", "Business Analyst")
 ];
 
+// getEmployee(id) function
+function getEmployee(id) {
+  let employ = employees.find(emp => emp.id === id);
+  console.log('found  ' + employ.firstName)
+};
+
+getEmployee(3);
 //output
 employees.forEach(function (emp) {
   console.log(emp.id + " " + emp.firstName + " " + emp.lastName + " " + emp.title)
